@@ -33,4 +33,21 @@ pre.center{
     width: 60%;
     border: #F2773F solid;
 }
+.areaOne,.areaTwo,.areaThr,.areaFou,.areaFiv,.areaSix,.areaSev,.areaEig,.areaNin,.areaTen{
+    display: inline-block;
+    width: 10%;
+    height: 100px;
+    border: 4px solid black;
+    margin: 0 auto;
+}
+.areaOne{background-color:#E6D273;}
+.areaTwo{background-color:#015496;}
+.areaThr{background-color:#F2773F;}
+.areaFou{background-color:#8CBFD2;}
+.areaFiv{background-color:#513E75;}
+.areaSix{background-color:#7E7F81;}
+.areaSev{background-color:#910615;}
+.areaEig{background-color:#50B948;}
+.areaNin{background-color:#FFFFFF;}
+.areaTen{background-color:#000000;}
 

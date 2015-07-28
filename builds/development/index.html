@@ -5,9 +5,28 @@
   <title>day #</title>
   <link rel="stylesheet" href="css/myStyle.css">
   <link rel="stylesheet" href="css/anotherstyle.css">
-</head>
-<body>
+  <script src="js/lib/angular/angular.min.js"></script>
+  <script src="js/lib/angular/app.js"></script>
 
+</head>
+<body ng-app="myApp">
+  <div ng-controller="ColorController">
+    <span ng-repeat="color in colorArray track by $index"
+      ng-class="{
+        areaOne:0 < color && color <10,
+        areaTwo:10 <= color && color <20,
+        areaThr:20 <= color && color <30,
+        areaFou:30 <= color && color <40,
+        areaFiv:40 <= color && color <50,
+        areaSix:50 <= color && color <60,
+        areaSev:60 <= color && color <70,
+        areaEig:70 <= color && color <80,
+        areaNin:80 <= color && color <90,
+        areaTen:90 <= color && color <100,
+      }"
+    ></span>
+
+  </div>
 
 </body>
 </html>
