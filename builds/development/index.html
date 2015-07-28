@@ -11,6 +11,8 @@
 </head>
 <body ng-app="myApp">
   <div ng-controller="ColorController">
+
+    <!--use ng-repeat to loop and generate the rectangular with randome color generated from the ng-class directive-->
     <span ng-repeat="color in colorArray track by $index"
       ng-class="{
         areaOne:0 < color && color <10,
